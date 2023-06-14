@@ -1,23 +1,18 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: "jit",
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
-    screens: {
-      xs: "320px",
-      ...defaultTheme.screens,
-    },
     extend: {
-      fontFamily: {
-        Raleway: ["Raleway"],
-        opensans: ["Open Sans"],
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },
-  variants: {
-    extend: {},
-  },
   plugins: [],
-};
+}
