@@ -2,20 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    overflow-x: hidden;
-    max-width: 100vw;
-    background-color: #111;
-    color: #bbb;
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  background-color: #111;
+  color: #bbb;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1366px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

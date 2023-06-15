@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import styles from "./navbar.module.css";
+import Image from "next/image";
 
 const links = [
   {
@@ -42,16 +44,28 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div>
-      <Link href={"/"}>Rox Hightech</Link>
+    <div className={styles.container}>
+      <Link href={"/"} className={styles.logo}>
+        <Image
+          src={"/images/white_logo.png"}
+          height={100}
+          width={150}
+          alt="roxhightech"
+        />
+      </Link>
 
-      <div>
+      <div className={styles.links}>
         {links.map((link) => (
-          <Link href={link.url} key={link.id}>
+          <Link href={link.url} key={link.id} className={styles.link}>
             {link.name}
           </Link>
         ))}
-        <button onClick={() => console.log("Logged out")}>Logout</button>
+        <button
+          className={styles.logout}
+          onClick={() => console.log("Logged out")}
+        >
+          Logout
+        </button>
       </div>
     </div>
   );
