@@ -12,19 +12,24 @@ const links = [
   },
   {
     id: 2,
-    name: "Projects",
-    url: "/projects",
+    name: "Portfolio",
+    url: "/portfolio",
   },
   {
     id: 3,
-    name: "Courses",
-    url: "/courses",
+    name: "Services",
+    url: "/services",
   },
   {
     id: 4,
-    name: "Blogs",
-    url: "/blogs",
+    name: "Courses",
+    url: "/courses",
   },
+  // {
+  //   id: 4,
+  //   name: "Blogs",
+  //   url: "/blogs",
+  // },
   {
     id: 5,
     name: "About",
@@ -35,11 +40,11 @@ const links = [
     name: "Contact",
     url: "/contact",
   },
-  {
-    id: 7,
-    name: "Dashboard",
-    url: "/dashboard",
-  },
+  // {
+  //   id: 7,
+  //   name: "Dashboard",
+  //   url: "/dashboard",
+  // },
 ];
 
 const Navbar = () => {
@@ -48,8 +53,8 @@ const Navbar = () => {
       <Link href={"/"} className={styles.logo}>
         <Image
           src={"/images/white_logo.png"}
-          height={100}
-          width={150}
+          height={150}
+          width={200}
           alt="roxhightech"
         />
       </Link>
@@ -60,12 +65,12 @@ const Navbar = () => {
             {link.name}
           </Link>
         ))}
-        <button
+        {/* <button
           className={styles.logout}
           onClick={() => console.log("Logged out")}
         >
           Logout
-        </button>
+        </button> */}
       </div>
     </div>
   );

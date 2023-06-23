@@ -10,6 +10,7 @@ const Contact = () => {
       <div className={styles.content}>
         <div className={styles.imgContainer}>
           <Image
+            alt="contact"
             fill={true}
             src={"/images/banner.png"}
             className={styles.image}
@@ -24,7 +25,7 @@ const Contact = () => {
             rows={10}
             className={styles.textArea}
           />
-          <Button url={"#"} text={"Send"} />
+          <Button url={"#"} text={"Submit"} />
         </form>
       </div>
     </div>

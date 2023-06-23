@@ -2,18 +2,18 @@ import React from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
 
-const Projects = () => {
+const Portfolio = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.selectTitle}>Choose a gallery</h1>
+      <h4 className={styles.selectTitle}>Choose a gallery</h4>
       <div className={styles.items}>
-        <Link href={"/projects/illustrations"} className={styles.item}>
+        <Link href={"/portfolio/illustrations"} className={styles.item}>
           <span className={styles.title}>Illustrations</span>
         </Link>
-        <Link href={"/projects/websites"} className={styles.item}>
+        <Link href={"/portfolio/websites"} className={styles.item}>
           <span className={styles.title}>Websites</span>
         </Link>
-        <Link href={"/projects/applications"} className={styles.item}>
+        <Link href={"/portfolio/applications"} className={styles.item}>
           <span className={styles.title}>Applications</span>
         </Link>
       </div>
@@ -21,4 +21,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Portfolio;

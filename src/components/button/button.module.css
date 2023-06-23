@@ -1,9 +1,11 @@
 .btn {
-  padding: 20px;
+  padding: 10px 20px;
   cursor: pointer;
-  background-color: #53c28b;
-  border: none;
+  border: 2px solid #223e98;
   border-radius: 5px;
   width: max-content;
   color: white;
+}
+.btn:hover {
+  background-color: #223e98;
 }

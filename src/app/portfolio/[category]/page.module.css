@@ -1,8 +1,7 @@
-.container {
-}
 .category {
   color: #53c28b;
   text-transform: capitalize;
+  text-align: center;
 }
 .item {
   display: flex;
@@ -21,17 +20,12 @@
   gap: 20px;
   justify-content: center;
 }
-.title {
-  font-size: 50px;
-}
-.desc {
-  font-style: 20px;
-}
+
 .imgContainer {
   flex: 1;
-  height: 500px;
+  height: 300px;
   position: relative;
 }
 .img {
-  object-fit: cover;
+  object-fit: contain;
 }

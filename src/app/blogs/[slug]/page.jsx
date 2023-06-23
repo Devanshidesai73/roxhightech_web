@@ -7,10 +7,10 @@ const BlogPost = () => {
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.info}>
-          <h1 className={styles.title}>
+          <h3 className={styles.title}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
             perferendis autem in at consequuntur dolorem.
-          </h1>
+          </h3>
           <p className={styles.desc}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
             neque ut veritatis accusantium quidem perferendis sint reiciendis

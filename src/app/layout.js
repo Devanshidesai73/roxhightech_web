@@ -1,9 +1,24 @@
 import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
-import { Inter, Roboto_Serif } from "next/font/google";
+import { Inter, Roboto_Serif, Reem_Kufi_Fun } from "next/font/google";
 import Footer from "@/components/footer/Footer";
 
-const inter = Roboto_Serif({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const roboto_serif = Roboto_Serif({
+  subsets: ["latin"],
+  variable: "--font-roboto-serif",
+  display: "swap",
+});
+const reem_kufi_fun = Reem_Kufi_Fun({
+  subsets: ["latin"],
+  variable: "--font-reem-kufi-fun",
+  display: "swap",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +28,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.variable} ${roboto_serif.variable} ${reem_kufi_fun.variable}`}
+      >
         <div className="container">
           <Navbar />
           {children}

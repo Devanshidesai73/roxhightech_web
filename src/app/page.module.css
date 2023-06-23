@@ -2,31 +2,13 @@
   display: flex;
   align-items: center;
   gap: 100px;
+  height: 90vh;
 }
 .item {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 50px;
-}
-.title {
-  font-size: 68px;
-  background: linear-gradient(to bottom, #194c33, #bbb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.description {
-  font-size: 24px;
-  font-weight: 300;
-}
-.btn {
-  padding: 20px;
-  cursor: pointer;
-  background-color: #53c28b;
-  border: none;
-  border-radius: 5px;
-  width: max-content;
-  color: white;
 }
 .img {
   width: 100%;
@@ -42,4 +24,203 @@
   to {
     transform: translateY(10px);
   }
+}
+
+.portfolio {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.portfolioImgDiv {
+  flex: 1;
+  height: 800px;
+  position: relative;
+}
+.portfolioImage {
+  object-fit: contain;
+  z-index: 2;
+}
+.portfolioTextDiv {
+  flex: 1;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.portfolioTxt {
+  font-family: var(--font-reem-kufi-fun);
+  font-size: 4rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.portfolioBottomBorder {
+  background: linear-gradient(to left, #223e98, #2279be, #3a93db, #111, #111);
+  height: 10px;
+  border-radius: 2px;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+}
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imageBG {
+  object-fit: contain;
+  opacity: 0.1;
+}
+.bgText {
+  text-transform: uppercase;
+  font-family: var(--font-reem-kufi-fun);
+  font-size: 400px;
+  font-weight: 700;
+  opacity: 0.1;
+  line-height: 420px;
+}
+.serviceContainer {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem 0;
+}
+.serviceTxt {
+  font-family: var(--font-reem-kufi-fun);
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+}
+.serviceBottomBorder {
+  background: linear-gradient(to left, #223e98, #2279be, #3a93db, #111, #111);
+  height: 10px;
+  border-radius: 2px;
+  margin-bottom: 3rem;
+}
+.cards {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.card {
+  flex: 1;
+  max-width: 300px;
+  min-width: 300px;
+  height: 500px;
+  border: 3px solid #223e98;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0 0 0.5px #fff, 0 0 2px #fff, 0 0 10px #0ba9ca, 0 0 20px #0ba9ca,
+    0 0 30px #2279be, 0 0 40px #223e98;
+  stroke-dasharray: 3px;
+}
+
+.card:hover .cardTxt {
+  opacity: 1;
+}
+.cardImageDiv {
+  height: 120px;
+  position: relative;
+  margin: 20px;
+}
+.cardImage {
+  object-fit: contain;
+}
+.cardTxt {
+  padding: 20px 15px;
+  opacity: 0.5;
+}
+.aboutSection {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.aboutTextDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+.aboutImgsDiv {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutImgDiv {
+  position: absolute;
+  height: 400px;
+  width: 600px;
+}
+.contactContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.contactForm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+}
+.input,
+.textArea {
+  padding: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #bbb;
+  border-bottom: 3px solid #bbb;
+}
+.contactInfoDiv {
+  flex: 1;
+  z-index: 1;
+}
+.contactTitle {
+  font-family: var(--font-reem-kufi-fun);
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+}
+.contactTitleBorder {
+  background: linear-gradient(to left, #223e98, #2279be, #3a93db, #111, #111);
+  height: 10px;
+  border-radius: 2px;
+}
+
+.contactBackgroundleft {
+  position: absolute;
+  top: -5%;
+  left: 65%;
+  right: 0;
+  transform: rotateZ(180deg);
+  opacity: 0.8;
+}
+.contactBackgroundright {
+  position: absolute;
+  right: 65%;
+  bottom: -5%;
+  opacity: 0.8;
 }
