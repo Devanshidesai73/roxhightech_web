@@ -29,13 +29,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${roboto_serif.variable} ${reem_kufi_fun.variable}`}
+      // className={`${inter.variable} ${roboto_serif.variable} ${reem_kufi_fun.variable}`}
       >
-        <div className="container">
+        {/* <div className="container">
           <Navbar />
           {children}
-          <Footer />
-        </div>
+          <Footer /> 
+        </div> */}
+        {children}
       </body>
     </html>
   );
