@@ -1,5 +1,6 @@
 import { Open_Sans, Roboto_Serif } from "next/font/google";
-import Banner from "./HomeContainers/banner";
+import Banner from "../HomeContainers/banner";
+import Services from "@/HomeContainers/services";
 
 const open_sans = Open_Sans({
   subsets: ["latin"],
@@ -13,9 +14,10 @@ const roboto = Roboto_Serif({
 export default function Home() {
   return (
     <main
-      className={`${roboto.variable} ${open_sans.variable} flex min-h-screen flex-col items-center font-sans`}
+      className={`${roboto.variable} ${open_sans.variable} flex min-h-screen w-screen flex-col font-sans`}
     >
       <Banner />
+      <Services />
     </main>
   );
 }
