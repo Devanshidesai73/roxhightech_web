@@ -30,8 +30,8 @@ const Services = () => {
   ];
   return (
     <section className="relative flex flex-col min-h-screen p-4 md:p-12 justify-center">
-      <h2 className="text-3xl md:text-6xl xl:text-6xl leading-tight tracking-wide font-bold uppercase z-10">
-        Our Services
+      <h2 className="text-3xl md:text-4xl xl:text-6xl leading-tight tracking-wide font-bold uppercase z-10">
+        Services
       </h2>
       <ul className="flex gap-12 justify-center items-center mt-24 flex-wrap">
         {services.map((item, index) => (

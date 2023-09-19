@@ -1,6 +1,10 @@
 import { Open_Sans, Roboto_Serif } from "next/font/google";
 import Banner from "../HomeContainers/banner";
 import Services from "@/HomeContainers/services";
+import Courses from "@/HomeContainers/courses";
+import Projects from "@/HomeContainers/projects";
+import About from "@/HomeContainers/about";
+import Contact from "@/HomeContainers/contact";
 
 const open_sans = Open_Sans({
   subsets: ["latin"],
@@ -18,6 +22,10 @@ export default function Home() {
     >
       <Banner />
       <Services />
+      <Courses />
+      <Projects />
+      <About />
+      <Contact />
     </main>
   );
 }
