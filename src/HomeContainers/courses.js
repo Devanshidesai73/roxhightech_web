@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -48,19 +47,11 @@ const Courses = () => {
     },
   ];
   return (
-    <section className="relative flex flex-col min-h-screen p-4 md:p-12 justify-center">
+    <section className="relative flex flex-col min-h-screen p-4 md:px-12 xl:px-24 justify-center">
       <h2 className="text-3xl md:text-4xl xl:text-6xl leading-tight tracking-wide font-bold uppercase z-10">
         Courses
       </h2>
       <div className="relative flex">
-        <div className="flex xl:w-1/3 2xl:w-1/12">
-          <Image
-            height={700}
-            width={500}
-            src={"/girl_with_books.png"}
-            className="absolute object-contain -left-16 sm:-left-28 lg:-left-16 xl:left-0 bottom-1/4 sm:top-40 lg:-bottom-64 xl:-bottom-32 h-1/6 sm:h-1/3 lg:h-3/5 xl:h-full 2xl:mt-14"
-          />
-        </div>
         <ul className="flex gap-12 justify-center items-center mt-24 flex-wrap flex-1">
           {courses.map((item, index) => (
             <li

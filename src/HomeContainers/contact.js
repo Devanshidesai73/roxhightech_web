@@ -3,7 +3,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="relative flex flex-col min-h-screen px-4 md:px-12 md:mt-8 justify-center">
+    <section className="relative flex flex-col min-h-screen p-4 md:px-12 xl:px-24 md:mt-8 justify-center">
       <h2 className="text-3xl md:text-4xl xl:text-4xl leading-tight tracking-wide font-bold capitalize z-10 xl:w-2/3 2xl:w-1/2">
         Connect with Rox Hightech to bring your vision to life.
       </h2>
@@ -62,7 +62,7 @@ const Contact = () => {
           <Image
             height={600}
             width={700}
-            src={"/Office_Map.png"}
+            src={"/Office_Map.svg"}
             className="object-contain"
           />
         </a>

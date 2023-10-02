@@ -4,17 +4,18 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="relative flex flex-col min-h-screen px-4 md:px-12 md:mt-8 justify-center">
+    <section className="relative flex flex-col min-h-screen p-4 md:px-12 xl:px-24 md:mt-8">
       <h2 className="text-3xl md:text-4xl xl:text-6xl leading-tight tracking-wide font-bold uppercase z-10">
         About Us
       </h2>
-      <div className="flex flex-wrap justify-center items-center py-8">
-        <div className="relative w-2/3 -mr-24 -mb-56 sm:mb-0 sm:-mr-24 md:mr-0 lg:mr-0 xl:-mr-10 2xl:-mr-52 sm:w-1/2 xl:w-2/5 2xl:w-1/2">
+      <div className="flex flex-col lg:flex-row justify-center items-center pt-20 pb-6 gap-12">
+        <div className="relative flex-1  flex items-center justify-center">
           <Image
-            height={600}
+            src={"/aboutSection.svg"}
+            alt="about"
+            className="object-contain"
             width={600}
-            src={"/girl_with_laptop.png"}
-            className="object-contain -ml-12 sm:ml-0"
+            height={600}
           />
         </div>
         <div className="flex flex-col flex-1 gap-8 items-start">

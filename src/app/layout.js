@@ -1,8 +1,12 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const open_sans = Open_Sans({
+  subsets: ["cyrillic"],
+  variable: "--font-open_sans",
+});
 
 export const metadata = {
   title: "Rox Hightech",
@@ -12,9 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={open_sans.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

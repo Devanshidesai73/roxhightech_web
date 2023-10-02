@@ -29,10 +29,11 @@ const Navbar = () => {
               {item.title === "Logo" ? (
                 <div className="relative">
                   <Image
-                    width={200}
-                    height={150}
-                    src={"/RHT_logo_white.png"}
+                    width={300}
+                    height={200}
+                    src={"/RHT_logo_white.svg"}
                     alt="Logo"
+                    className="object-contain"
                   />
                 </div>
               ) : (
@@ -45,9 +46,9 @@ const Navbar = () => {
       <div className="relative justify-between items-center flex lg:hidden">
         <div className="relative flex  flex-1">
           <Image
-            width={150}
-            height={100}
-            src={"/RHT_logo_white.png"}
+            width={300}
+            height={200}
+            src={"/RHT_logo_white.svg"}
             alt="Logo"
           />
         </div>

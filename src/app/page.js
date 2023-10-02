@@ -1,4 +1,4 @@
-import { Open_Sans, Roboto_Serif } from "next/font/google";
+import { Open_Sans, Roboto_Serif, Poppins } from "next/font/google";
 import Banner from "../HomeContainers/banner";
 import Services from "@/HomeContainers/services";
 import Courses from "@/HomeContainers/courses";
@@ -7,9 +7,10 @@ import About from "@/HomeContainers/about";
 import Contact from "@/HomeContainers/contact";
 
 const open_sans = Open_Sans({
-  subsets: ["latin"],
+  subsets: ["cyrillic"],
   variable: "--font-open_sans",
 });
+
 const roboto = Roboto_Serif({
   subsets: ["latin"],
   variable: "--font-roboto",

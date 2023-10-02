@@ -29,7 +29,7 @@ const Services = () => {
     },
   ];
   return (
-    <section className="relative flex flex-col min-h-screen p-4 md:p-12 justify-center">
+    <section className="relative flex flex-col min-h-screen p-4 md:px-12 xl:px-24 justify-center">
       <h2 className="text-3xl md:text-4xl xl:text-6xl leading-tight tracking-wide font-bold uppercase z-10">
         Services
       </h2>
@@ -37,7 +37,7 @@ const Services = () => {
         {services.map((item, index) => (
           <li
             key={index}
-            className="w-72 border-2 md:p-4 p-2 rounded-xl h-80 flex"
+            className="w-80 border-2 md:p-4 p-2 rounded-xl h-96 flex"
           >
             <Link href={item.link} className="flex flex-col gap-8 flex-1">
               <div className="relative flex-1 justify-center items-center flex">
