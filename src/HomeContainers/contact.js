@@ -8,8 +8,8 @@ const Contact = () => {
         Connect with Rox Hightech to bring your vision to life.
       </h2>
 
-      <div className="flex flex-wrap justify-center items-center py-8">
-        <div className="flex flex-col flex-1 gap-4 items-start">
+      <div className="relative flex flex-wrap justify-center items-center py-8">
+        <div className="flex flex-col flex-1 gap-4 items-start z-10">
           <a
             href={"mailto:contact@roxhightech.com"}
             className="flex gap-2 items-center font-sans text-xs md:text-base sm:text-lg lg:text-xl w-9/12"
@@ -66,10 +66,11 @@ const Contact = () => {
             className="object-contain"
           />
         </a>
+        <div className="absolute -top-10 flex-1 text-zinc-700 opacity-50 font-bold text-[0px] sm:text-[120px] lg:text-[140px] xl:text-[140px] 2xl:text-[180px] flex flex-col w-4/5 h-4/5 justify-center">
+          <span className="text-center">Let's Make It</span>
+          <span className="text-center">Reality!</span>
+        </div>
       </div>
-      {/* <span className="absolute text-slate-500 text-9xl flex justify-center items-center flex-1">
-Let’s Make It A Reality!
-</span> */}
     </section>
   );
 };

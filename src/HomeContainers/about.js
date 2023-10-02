@@ -9,7 +9,7 @@ const About = () => {
         About Us
       </h2>
       <div className="flex flex-col lg:flex-row justify-center items-center pt-20 pb-6 gap-12">
-        <div className="relative flex-1  flex items-center justify-center">
+        <div className="relative flex-1  flex items-center justify-center z-10">
           <Image
             src={"/aboutSection.svg"}
             alt="about"
@@ -18,7 +18,7 @@ const About = () => {
             height={600}
           />
         </div>
-        <div className="flex flex-col flex-1 gap-8 items-start">
+        <div className="flex flex-col flex-1 gap-8 items-start z-10">
           <p className="font-sans text-base sm:text-lg lg:text-xl">
             Get to know Rox Hightech, where innovation meets creativity.
             Discover our mission, values, and the expertise that drives us.
@@ -31,10 +31,11 @@ const About = () => {
             Explore Our Story
           </Link>
         </div>
+        <div className="absolute flex-1 text-zinc-700 opacity-50 font-bold text-[0px] sm:text-[180px] lg:text-[180px] 2xl:text-[250px] leading-[250px] flex flex-col w-4/5 h-4/5 justify-center">
+          <span className="text-center">Who We</span>
+          <span className="text-center">Are</span>
+        </div>
       </div>
-      {/* <span className="absolute text-slate-500 text-9xl flex justify-center items-center flex-1">
-Who We Are
-</span> */}
     </section>
   );
 };
