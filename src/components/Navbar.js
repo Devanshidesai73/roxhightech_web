@@ -33,7 +33,7 @@ const Navbar = () => {
                     height={200}
                     src={"/RHT_logo_white.svg"}
                     alt="Logo"
-                    className="object-contain"
+                    className="object-contain h-auto"
                   />
                 </div>
               ) : (
@@ -50,6 +50,7 @@ const Navbar = () => {
             height={200}
             src={"/RHT_logo_white.svg"}
             alt="Logo"
+            className="h-auto object-contain"
           />
         </div>
         <div className="relative flex flex-col flex-1">
@@ -60,14 +61,14 @@ const Navbar = () => {
                 width={25}
                 height={28}
                 src={"/toggleNavOff.svg"}
-                className={`${!toggle ? "flex" : "hidden"}`}
+                className={`${!toggle ? "flex" : "hidden"} h-auto`}
               />
               <Image
                 alt="Toggle On"
                 width={25}
                 height={28}
                 src={"/toggleNavOn.svg"}
-                className={`${toggle ? "flex" : "hidden"}`}
+                className={`${toggle ? "flex" : "hidden"} h-auto`}
               />
             </div>
           </button>

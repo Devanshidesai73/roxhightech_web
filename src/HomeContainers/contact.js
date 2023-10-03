@@ -15,6 +15,7 @@ const Contact = () => {
             className="flex gap-2 items-center font-sans text-xs md:text-base sm:text-lg lg:text-xl w-9/12"
           >
             <Image
+              alt="mail"
               height={22}
               width={22}
               src={"/mail.svg"}
@@ -24,6 +25,7 @@ const Contact = () => {
           </a>
           <span className="flex gap-2 font-sans text-xs md:text-base sm:text-lg lg:text-xl w-9/12">
             <Image
+              alt="contact"
               height={22}
               width={22}
               src={"/contact.svg"}
@@ -45,6 +47,7 @@ const Contact = () => {
             className="flex gap-2 items-start font-sans text-xs md:text-base sm:text-lg lg:text-xl w-9/12"
           >
             <Image
+              alt="location"
               height={18}
               width={18}
               src={"/location.svg"}
@@ -62,6 +65,7 @@ const Contact = () => {
           <Image
             height={600}
             width={700}
+            alt="map"
             src={"/Office_Map.svg"}
             className="object-contain"
           />
