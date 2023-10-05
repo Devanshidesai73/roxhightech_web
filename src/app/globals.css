@@ -18,4 +18,43 @@ body {
   color: #fff;
   font-size: 20px;
   font-weight: 300;
+  cursor: none;
+}
+a,
+button {
+  cursor: none;
+}
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: solid 2px #3960ad;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 60ms;
+}
+.cursor2 {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: #3960ad;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 50ms ease linear;
+}
+
+.content:hover ~ .cursor {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: #3960ad;
+  opacity: 0.5;
+}
+
+.content:hover ~ .cursor2 {
+  opacity: 0;
 }
