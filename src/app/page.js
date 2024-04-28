@@ -18,15 +18,11 @@ const roboto = Roboto_Serif({
 
 export default function Home() {
   return (
-    <main
-      className={`${roboto.variable} ${open_sans.variable} flex min-h-screen w-screen flex-col font-sans`}
-    >
-      <Banner />
-      <Services />
-      <Courses />
-      <Projects />
-      <About />
-      <Contact />
+    <main className="flex min-h-screen flex-col items-center p-24 bg-black">\
+    <Image src={'/logo_white.png'} width={500} height={250} className="z-10 object-contain mt-32" />
+     <video autoPlay muted loop className="object-contain w-full h-full fixed">
+     <source src={'/coming_soon.mp4'} type="video/mp4"/>
+      </video>
     </main>
   );
 }
